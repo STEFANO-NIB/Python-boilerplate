@@ -28,7 +28,7 @@ class CarRepo:
             "is_dirty": is_dirty,
             "hours_spent": hours_spent,
             "price": price
-        }) 
+        })
         return car_list[-1]
 
     def update_car(*args, license_plate):
@@ -45,4 +45,4 @@ class CarRepo:
         for i, car in enumerate(car_list):
             if car["license_plate"] == license_plate:
                 return car_list.pop(i)
-        return {'error': 'No cars to delete'}  
+        return {'error': 'No cars to delete'}

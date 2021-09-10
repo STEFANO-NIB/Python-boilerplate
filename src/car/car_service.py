@@ -11,13 +11,13 @@ class CarService():
         self.car = CarRepo()
 
 
-    # Private function that is only to be used in the CarService. 
+    # Private function that is only to be used in the CarService.
     # This calculates the car parking price based on it's variables
     def _calc_parking_price(self, color, is_dirty, hours_spent):
         #List of colors that would have a discount
         color_list = ['red', 'blue', 'black']
         #The fixed hourly rate for parking
-        rate = 7 
+        rate = 7
         hours = hours_spent or 0
         #Trim and lowercase user inputted colors for accurate comparisons
         new_color = str(color).strip().lower()
@@ -87,10 +87,10 @@ class CarService():
             return self.car.update_car(updated_car, license_plate=license_plate)
         else:
             f'There is no car of license plate {license_plate} currently parked in this garage'
-    
+
     def delete_car(self, license_plate):
         curr_car = self.get_car(license_plate)
         if (curr_car):
             return self.car.remove_car(license_plate)
-        
+
         return curr_car

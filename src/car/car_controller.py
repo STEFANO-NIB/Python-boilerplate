@@ -24,7 +24,7 @@ def add_car():
         hours_spent=data.get('hours_spent'),
         license_plate=data.get("license_plate")
     )
- 
+
     return jsonify(car), 200
 
 #Update existing car
