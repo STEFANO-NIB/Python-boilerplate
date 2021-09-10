@@ -4,21 +4,21 @@ This project helps new and old developers to get adjusted quickly with the way p
 
 # Getting started:
 
-# Activate virtual environment:
+### Activate virtual environment:
 ````
 .virtualenv/Scripts/activate.bat
 ````
 
-# Install dependencies by running:
+### Install dependencies by running:
 ````
 $ pip install -r requirements.txt
 ````
 
-# To run this project, run: 
+### To run this project, run: 
 ````
 python app.py
 ````
 
-# File details for the directory:
+### File details for the directory:
 app.py file:
 This is the entry point of the project.
