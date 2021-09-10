@@ -2,13 +2,19 @@ NIB's Python Boilerplate project
 
 This project helps new and old developers to get adjusted quickly with the way project structures are currently, and acts as a playground for testing ideas.
 
-To run this project, run: 
-
+Activate virtual environment:
+````
+.virtualenv/Scripts/activate.bat
 ````
 
+install dependencies by running:
+````
+$ pip install -r requirements.txt
+````
+
+To run this project, run: 
+````
 python app.py
-
-
 ````
 
 app.py file:
